@@ -1,3 +1,4 @@
+import Artigo from "../Artigo";
 const Conteudo = () => {
   return (
     <main>
@@ -16,6 +17,9 @@ const Conteudo = () => {
           voluptatibus amet! Quis ipsam commodi enim facilis veritatis?
         </p>
       </section>
+      <Artigo />
+      <Artigo />
+      <Artigo />
     </main>
   );
 };
