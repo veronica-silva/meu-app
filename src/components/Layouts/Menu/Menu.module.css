@@ -1,0 +1,23 @@
+.nav {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  padding: 5px;
+  align-content: center;
+}
+
+.links {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 5px;
+}
+
+.links:hover {
+  background-color: black;
+  color: antiquewhite;
+  font-weight: bolder;
+  border-radius: 5px;
+}
