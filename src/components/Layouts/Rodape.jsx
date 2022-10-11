@@ -1,7 +1,8 @@
+import estilos from "./Rodape.module.css";
 const Rodape = () => {
   return (
     <footer>
-      <h2 className="subtitulo">Rodapé</h2>
+      <h2 className={estilos.subtitulo}>Rodapé</h2>
     </footer>
   );
 };

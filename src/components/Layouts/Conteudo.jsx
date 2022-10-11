@@ -1,10 +1,10 @@
 import Artigo from "../Artigo";
-import "./Conteudo.css";
+import estilos from "./Conteudo.module.css";
 const Conteudo = () => {
   return (
     <main>
       <section>
-        <h2 className="subtitulo">Conteúdo...</h2>
+        <h2 className={estilos.subtitulo}>Conteúdo...</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           laboriosam tempore molestiae autem nam dolor excepturi numquam nemo
