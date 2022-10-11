@@ -1,5 +1,4 @@
 import Artigo from "../Artigo";
-import "./Conteudo.css";
 const Conteudo = () => {
   return (
     <main>
