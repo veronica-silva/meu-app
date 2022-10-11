@@ -4,7 +4,7 @@ const Conteudo = () => {
   return (
     <main>
       <section>
-        <h2>Conteúdo...</h2>
+        <h2 className="subtitulo">Conteúdo...</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           laboriosam tempore molestiae autem nam dolor excepturi numquam nemo
