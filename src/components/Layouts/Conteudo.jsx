@@ -38,17 +38,15 @@ const Conteudo = () => {
           voluptatibus amet! Quis ipsam commodi enim facilis veritatis?
         </p>
       </section>
-      {artigos.map((artigo) => {
-        return (
-          <Artigo
-            titulo={artigo.titulo}
-            subtitulo={artigo.subtitulo}
-            curso={artigo.curso}
-          >
-            {artigo.texto}
-          </Artigo>
-        );
-      })}
+      {artigos.map((artigo) => (
+        <Artigo
+          titulo={artigo.titulo}
+          subtitulo={artigo.subtitulo}
+          curso={artigo.curso}
+        >
+          {artigo.texto}
+        </Artigo>
+      ))}
     </main>
   );
 };
