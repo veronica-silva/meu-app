@@ -3,18 +3,21 @@ import "./Conteudo.css";
 const Conteudo = () => {
   const artigos = [
     {
+      id: 1,
       titulo: "artigo 1",
       subtitulo: "sub 1",
       texto: "texto completo do artigo 1",
       curso: "curso de  HTML e CSS",
     },
     {
+      id: 2,
       titulo: "artigo 2",
       subtitulo: "sub 2",
       texto: "texto completo do artigo 2",
       curso: "curso de  PHP",
     },
     {
+      id: 3,
       titulo: "artigo 3",
       subtitulo: "sub 3",
       texto: "texto completo do artigo 3",
@@ -40,6 +43,7 @@ const Conteudo = () => {
       </section>
       {artigos.map((artigo) => (
         <Artigo
+          key={artigo.id}
           titulo={artigo.titulo}
           subtitulo={artigo.subtitulo}
           curso={artigo.curso}
