@@ -1,10 +1,13 @@
 import Artigo from "../Artigo";
 import "./Conteudo.css";
+import Alert from "react-bootstrap/Alert";
 const Conteudo = () => {
   return (
     <main>
       <section>
-        <h2>Conteúdo...</h2>
+        <Alert variant="primary">
+          <h2>Conteúdo...</h2>
+        </Alert>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           laboriosam tempore molestiae autem nam dolor excepturi numquam nemo
