@@ -1,10 +1,24 @@
+import { useState } from "react";
 import Artigo from "../Artigo";
 import "./Conteudo.css";
 const Conteudo = () => {
+  const [corFundo, setCorFundo] = useState("white");
+  const [contador, setContador] = useState(0);
+
+  const fundoClaro = () => {
+    setCorFundo("white");
+  };
+  const fundoNoturno = () => {
+    setCorFundo("grey");
+  };
+
+  const atualizaContagem = () => setContador(contador + 1);
   return (
-    <main>
+    <main style={{ backgroundColor: corFundo }}>
+      <button onClick={fundoClaro}>Modo Claro</button>
+      <button onClick={fundoNoturno}>Modo Noturno</button>
       <section>
-        <h2>Conteúdo...</h2>
+        <h2 onClick={atualizaContagem}>contador: {contador}</h2>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Error
           laboriosam tempore molestiae autem nam dolor excepturi numquam nemo
