@@ -18,9 +18,9 @@ const Conteudo = () => {
           voluptatibus amet! Quis ipsam commodi enim facilis veritatis?
         </p>
       </section>
-      <Artigo />
-      <Artigo />
-      <Artigo />
+      <Artigo titulo="Artigo 1">Texto do primeiro artigo</Artigo>
+      <Artigo titulo="Artigo 2">Texto do segundo artigo</Artigo>
+      <Artigo titulo="Artigo 3">Texto do terceiro artigo</Artigo>
     </main>
   );
 };
