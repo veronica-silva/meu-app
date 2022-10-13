@@ -1,7 +1,26 @@
 import Artigo from "../Artigo";
 import "./Conteudo.css";
 const Conteudo = () => {
-  const cursos = ["HTML e CSS", "PHP", "Javascript"];
+  const artigos = [
+    {
+      titulo: "artigo 1",
+      subtitulo: "sub 1",
+      texto: "texto completo do artigo 1",
+      curso: "curso de  HTML e CSS",
+    },
+    {
+      titulo: "artigo 2",
+      subtitulo: "sub 2",
+      texto: "texto completo do artigo 2",
+      curso: "curso de  PHP",
+    },
+    {
+      titulo: "artigo 3",
+      subtitulo: "sub 3",
+      texto: "texto completo do artigo 3",
+      curso: "curso de  Javascript",
+    },
+  ];
   return (
     <main>
       <section>
@@ -19,15 +38,17 @@ const Conteudo = () => {
           voluptatibus amet! Quis ipsam commodi enim facilis veritatis?
         </p>
       </section>
-      <Artigo titulo="Artigo 1" subtitulo="Subtitulo 1" curso={cursos[0]}>
-        Texto do primeiro artigo
-      </Artigo>
-      <Artigo titulo="Artigo 2" subtitulo="Subtitulo 2" curso={cursos[1]}>
-        Texto do segundo artigo
-      </Artigo>
-      <Artigo titulo="Artigo 3" subtitulo="Subtitulo 3" curso={cursos[2]}>
-        Texto do terceiro artigo
-      </Artigo>
+      {artigos.map((artigo) => {
+        return (
+          <Artigo
+            titulo={artigo.titulo}
+            subtitulo={artigo.subtitulo}
+            curso={artigo.curso}
+          >
+            {artigo.texto}
+          </Artigo>
+        );
+      })}
     </main>
   );
 };
