@@ -1,6 +1,7 @@
 import Artigo from "../Artigo";
 import "./Conteudo.css";
 const Conteudo = () => {
+  const cursos = ["HTML e CSS", "PHP", "Javascript"];
   return (
     <main>
       <section>
@@ -18,9 +19,15 @@ const Conteudo = () => {
           voluptatibus amet! Quis ipsam commodi enim facilis veritatis?
         </p>
       </section>
-      <Artigo titulo="Artigo 1">Texto do primeiro artigo</Artigo>
-      <Artigo titulo="Artigo 2">Texto do segundo artigo</Artigo>
-      <Artigo titulo="Artigo 3">Texto do terceiro artigo</Artigo>
+      <Artigo titulo="Artigo 1" subtitulo="Subtitulo 1" curso={cursos[0]}>
+        Texto do primeiro artigo
+      </Artigo>
+      <Artigo titulo="Artigo 2" subtitulo="Subtitulo 2" curso={cursos[1]}>
+        Texto do segundo artigo
+      </Artigo>
+      <Artigo titulo="Artigo 3" subtitulo="Subtitulo 3" curso={cursos[2]}>
+        Texto do terceiro artigo
+      </Artigo>
     </main>
   );
 };
