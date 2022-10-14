@@ -1,12 +1,8 @@
 import Menu from "../Menu";
-const estilo = {
-  color: "white",
-  backgroundColor: "darkgrey",
-};
 const Cabecalho = () => {
   return (
-    <header style={{ backgroundColor: "lightblue", textAlign: "center" }}>
-      <h1 style={estilo}>Inteface React</h1>
+    <header>
+      <h1>Inteface React</h1>
       <Menu></Menu>
     </header>
   );
